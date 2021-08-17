@@ -1,4 +1,4 @@
-# shopify-hosted-payments
+# hosted-payments-shopify
 
 Meteor based hosted payment system for Shopify. Provides a hosted payment page using Stripe that can be used with Shopify's [Hosted Payment SDK](https://help.shopify.com/api/sdks/hosted-payment-sdk).
 
@@ -9,8 +9,8 @@ To use this system you will need a valid Stripe account, as it uses Stripe's emb
 ## 2. Installation
 
 ```
-git clone https://github.com/hwillson/shopify-hosted-payments.git
-cd shopify-hosted-payments
+git clone git@github.com:mdraya3/hosted-payments-shopify.git
+cd hosted-payments-shopify
 meteor npm install
 ```
 
@@ -39,19 +39,19 @@ Application settings are controlled via the `/config/settings*.json` files. When
 ```
 {
   "public": {
-    "paymentPage": {            
+    "paymentPage": {
       // Shown on the Stripe checkout form
       "companyName": "Some Company Inc.",
-    
+
       // Shown in the top left corner of the payment page
       "companyLogoUrl": "https://www.somesite.com/some-logo.png",
-      
+
       // Shown centered on the payment page
       "backgroundImageUrl": "https://www.somesite.com/some-bg-image.jpg",
-      
+
       // Redirect if Stripe checkout popup is closed
       "closedRedirectUrl": "https://www.somesite.com/cart/"
-    }  
+    }
   }
 }
 ```
